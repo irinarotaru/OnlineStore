@@ -1,0 +1,36 @@
+<p>Bine ai venit <%=utilizator%></p>
+<form action="/creare-bd" method="GET">
+    <button type="submit">Creare BD</button>
+</form><br>
+<form action="/incarcare-bd" method="GET">
+    <button type="submit">Încarcare BD</button>
+</form><br>
+<table>
+    <tr>
+        <td style = "font-size: 25px;">Produs</td>
+        <td style = "font-size: 25px;">Preț</td> 
+    </tr>
+    <% if (products!=undefined)
+    {
+    %>
+    <% for(var i = 0; i < products.length; i++){ %>
+        <tr>
+            <td><%= products[i].name %></td>
+            <td><%= products[i].price %></td>
+            <td>
+            <% 
+                if(utilizator != null)
+                {
+            %>
+            <form style="background-color:rgb(238, 221, 221)" action = "adaugare_cos" method = "POST">
+                <input type = "hidden" name = "id" value = <%= i %>>
+                <input type="submit" value = "Adaugă în coș">
+            </form>
+            <% } %>
+            </td>
+        </tr>
+    <% 
+        }
+    }
+%>
+</table>

@@ -1,0 +1,17 @@
+<style>
+    .error-message{
+        color:red;
+    }
+</style>
+<form action="/verificare-autentificare" method="POST">
+    <label for="user">Nume utilizator:</label>
+    <input type="text" id="user" name="user"><br><br>
+    <label for="pass">Parola:</label>
+    <input type="password" id="pass" name="pass"><br><br>
+    <input type="submit" value="Autentificare"><br>
+</form>
+<% if (eroare) { %>
+    <p class="error-message"><%= eroare %></p>
+<% } %>
+
+

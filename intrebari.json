@@ -1,0 +1,28 @@
+[
+    {
+      "intrebare": "Ce poti gasi pe acest site?",
+      "variante": ["alimente", "documente", "electrocasnice", "telefoane"],
+      "corect": 2
+    },
+    {
+      "intrebare": "Unde se stochează mâncarea?",
+      "variante": ["frigider", "cuptor", "sertar", "pe masă"],
+      "corect": 0
+    },
+    {
+      "intrebare": "Fără ce eletrocasnic nu ați putea trăi?",
+      "variante": ["centrală", "mașină de spălat vase", "cuptor cu microunde", "mașină de spălat"],
+      "corect": 3
+    },
+    {
+      "intrebare": "Unde se încălzește mâncarea?",
+      "variante": ["cuptor", "frigider", "cuptor cu microunde", "fierbător"],
+      "corect": 2
+    },
+    {
+      "intrebare": "Ce reducere ați prefera?",
+      "variante": ["fier de călcat", "hotă", "friteoză", "mixer"],
+      "corect": 2
+    }
+]
+   

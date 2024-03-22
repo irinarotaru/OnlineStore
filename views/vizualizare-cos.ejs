@@ -1,0 +1,19 @@
+<h1>Vizualizare coș</h1>
+<table>
+    <tr>
+        <td>Produs</td>
+        <td>Cantitate</td>
+    </tr>
+    <% if(cantitati!=null && produse!=null){%>
+        <% for(var i=0;i<cantitati.length;i++){%>
+            <% if(cantitati[i]!=null){%>
+                <tr>
+                    <td><%=produse[i].name%></td>
+                    <td><%=cantitati[i]%></td>
+                </tr>
+            <%}%>
+        <%
+        }
+    }
+    %>
+</table>
